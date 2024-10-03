@@ -1,0 +1,17 @@
+<div id="tableContainer">
+    <table id="mainTable">
+        <tr>
+            <th *ngFor="let title of headerTitles"> {{title}} </th>
+        </tr>
+        <tr *ngFor="let p of people; let i = index">
+            <td> {{ p.id }} </td>
+            <td> {{ p.nome }} </td>
+            <td> {{ ponctuateCPF(p.cpf) }} </td>
+            <td> {{ p.idade }} </td>
+            <td> {{ p.email }} </td>
+            <delete-button [index]="i" (click)="delPerson(p.id)"/>
+            <!-- <button type="button" id="deletePerson">x</button> -->
+        </tr>
+    </table>
+
+</div>

@@ -1,0 +1,28 @@
+div#tableContainer{
+    margin: 5dvh;
+    width: 140dvh;
+    /* background-color: #555; */
+    justify-content: center;
+}
+
+table#mainTable{
+    width: 100dvh;
+    margin: auto;
+    justify-content: center;
+}
+
+th{
+    width: 20dvh;
+    background-color: rgb(14, 121, 121);
+    color: white;
+}
+
+td{
+    text-align: center;
+    
+}
+
+tr{
+    margin: 2px;
+    border-bottom: 1px solid black;
+}

@@ -1,0 +1,4 @@
+<div class="mainBox">
+    <app-searching-field (create)="addPerson($event)" (search)="attSearch($event)" [peopleLength]="maxId"/>
+    <app-data-table [people]="people"/>
+</div>

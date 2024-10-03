@@ -1,0 +1,35 @@
+div#searchingField{
+    background-color: #444;
+    width: 150dvh;
+    
+    margin-top: 5dvh;
+    height: 30dvh;
+
+    border-bottom: 2px solid white;
+}
+
+input#search{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80dvh;
+    height: 10dvh;
+    margin: 10dvh;
+}
+
+button#clickSearch{
+    background-color: rgb(44, 146, 62);
+    border: none;
+    border-radius: 5px;
+    width: 15dvh;
+    height: 15dvh;
+}
+
+button#createPerson{
+    background-color: rgb(67, 161, 182);
+    border: none;
+    border-radius: 5px;
+    width: 15dvh;
+    height: 15dvh;
+}
+

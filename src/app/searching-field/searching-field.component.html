@@ -1,0 +1,10 @@
+<div id="searchingField">
+    <form>
+        <label for="search"></label>
+        <input type="text" id="search" name="fsearch" placeholder="Digite o nome da pessoa" (input)="callSearch(nomeDaPessoa)"
+                [(ngModel)]="nomeDaPessoa">
+                
+        <button type="" id="clickSearch">Pesquisar</button>
+        <button type="button" id="createPerson" (click)="callPersonCreation()" >Criar</button>
+    </form>
+</div>
