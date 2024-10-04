@@ -5,16 +5,16 @@ Esse projeto foi gerado com o Angular CLI (https://github.com/angular/angular-cl
 
 ## Tecnologias
 
-Angular 18.2.5
-PrimeNG
-Typescript
-HTML, CSS
+- Angular 18.2.5
+- PrimeNG
+- Typescript
+- HTML, CSS
 
 ## Pré-requisitos
 
-Node.js
-Angular CLI
-JSON-server
+- Node.js
+- Angular CLI
+- JSON-server
 
 ## Instalação
 
@@ -47,7 +47,11 @@ Abra o navegador e acesse http://localhost:4200.
 
 ## Backlog
 
-Cadastro de Pacientes:
+- Cadastro, edição, listagem e deleção de pacientes.
+- Validação dos formulários.
+- Notificações de formulários incorretos.
+
+
 ## Uso do programa
 
 Função CREATE:
