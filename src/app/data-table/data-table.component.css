@@ -1,28 +1,63 @@
 div#tableContainer{
     margin: 5dvh;
     width: 140dvh;
+    height: 70dvh;
     /* background-color: #555; */
     justify-content: center;
+    overflow-y: scroll;
+}
+
+div#tableContainer::-webkit-scrollbar{
+    display: none;
 }
 
 table#mainTable{
-    width: 100dvh;
+    width: 110dvh;
     margin: auto;
     justify-content: center;
 }
 
 th{
-    width: 20dvh;
+    width: 25dvh;
     background-color: rgb(14, 121, 121);
     color: white;
 }
 
 td{
+    width: 25dvh;
     text-align: center;
+    border-bottom: 1px solid white;
     
 }
 
-tr{
+tr.tableLine{
     margin: 2px;
-    border-bottom: 1px solid black;
+    color: white;
+    height: 3 dvh;
+}
+
+.p-button-info{
+    display: flex;
+    width: 40%;
+    height: 40%;
+    margin: 5px;
+    
+    top: 2px;
+}
+
+.p-button-danger{
+    display: flex;
+    width: 40%;
+    height: 40%;
+    margin: 5px;
+
+    
+    top: 2px;
+}
+
+.deleteButton, .editButton{
+    padding: 10px;
+    font-size: 10pt;
+    padding-right: 20px;
+    
 }

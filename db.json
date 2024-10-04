@@ -4,15 +4,43 @@
       "id": "1",
       "nome": "Gabriel Tessarolo",
       "cpf": "70550307141",
-      "nascimento": "27/12/2005",
+      "nascimento": "2005-12-27",
       "email": "tessarolohelmer@gmail.com"
     },
     {
       "id": "2",
-      "nome": "Maria Soares Silva",
-      "cpf": "31204432355",
-      "nascimento": "1999-02-01",
-      "email": "mariasoares@gmail.com"
+      "nome": "Amanda Reis",
+      "cpf": "76835400999",
+      "nascimento": "2006-03-01",
+      "email": "amanda@gmail.com"
+    },
+    {
+      "id": "3",
+      "nome": "Exu Cavera",
+      "cpf": "87665443210",
+      "nascimento": "1998-03-01",
+      "email": "exxubones@gmail.com"
+    },
+    {
+      "id": "4",
+      "nome": "Armando Costa",
+      "cpf": "11122233345",
+      "nascimento": "2002-03-31",
+      "email": "armandocosta@gmail.com"
+    },
+    {
+      "id": "5",
+      "nome": "Daniel Silva",
+      "cpf": "97364718234",
+      "nascimento": "2024-03-09",
+      "email": "daniels@gmail.com"
+    },
+    {
+      "id": "6",
+      "nome": "Eduardo Santos",
+      "cpf": "93912341409",
+      "nascimento": "",
+      "email": "eduardosantos@gmail.com"
     }
   ]
 }

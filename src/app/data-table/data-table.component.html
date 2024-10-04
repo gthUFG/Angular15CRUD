@@ -3,15 +3,13 @@
         <tr>
             <th *ngFor="let title of headerTitles"> {{title}} </th>
         </tr>
-        <tr *ngFor="let p of people; let i = index">
-            <td> {{ p.id }} </td>
+        <tr *ngFor="let p of people" class="tableLine">
             <td> {{ p.nome }} </td>
             <td> {{ ponctuateCPF(p.cpf) }} </td>
-            <td> {{ p.nascimento }} </td>
+            <td> {{ displayBirth(p.nascimento) }} </td>
             <td> {{ p.email }} </td>
-            <delete-button [index]="i" (click)="delPerson(parseN(p.id))"/>
+            <delete-button (click)="delPerson(parseN(p.id))"/>
             <edit-button (click)="callEditPerson(parseN(p.id))"></edit-button>
-            <!-- <button type="button" id="deletePerson">x</button> -->
         </tr>
     </table>
 

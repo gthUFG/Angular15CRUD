@@ -16,7 +16,8 @@ div#registerPerson{
     background-color: #444;
     width: 30%;
     height: 100%;
-
+    justify-content: center;
+    
     margin-left: 4px;
     top: 0px;
     right: 0px; 
@@ -37,11 +38,76 @@ div#registerPerson h2{
     font-size: 13pt;
     text-align: center;
     height: 20px;
-    line-height: 10px;   
+    line-height: 10px; 
+    color: white;  
 }
 
 div#registerPerson input{
     height: 20px;
-    width: 90%;
+    width: 80%;
+    height: 10dvh;
     margin: auto;
+    display: flex;
+    margin-top: 5dvh;
+    padding: 2dvh;
+}
+
+div#registerPerson p-button{
+    display: flex;
+    width: 100%;
+    height: 10dvh;
+    margin-top: 10dvh;
+
+    margin: auto;
+    display: flex;
+}
+
+.registerButton{
+    width: 200px;
+
+    text-align: center;
+}
+
+.p-button-primary{
+    display: flex;
+    width: 50%;
+    height: 10dvh;
+    
+    font-weight: bolder;
+    text-align: right;
+
+    top: 5dvh;
+
+    margin: auto;
+    display: flex;
+}
+.p-button-success{
+    display: flex;
+    width: 50%;
+    height: 10dvh;
+    
+    font-weight: bolder;
+    text-align: right;
+
+    top: 5dvh;
+
+    margin: auto;
+    display: flex;
+}
+
+input#search{
+    width: 83dvh;
+    margin-left: 20dvh;
+    margin-top: 7dvh;
+}
+
+.createButton{
+    line-height: 2.75dvh;
+    text-align: left;
+    margin-left: 2dvh;
+    padding: -10px;
+
+    font-weight: bolder;
+    text-align: center;
+
 }
