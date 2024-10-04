@@ -19,10 +19,10 @@ export class SearchingFieldComponent {
   @Input() peopleLength: number = 0;
   
   pessoa: Person = {
-    id: this.peopleLength+1,
+    id: "15",
     nome: "Jubiscleudo",
     cpf: "192391239",
-    idade: 0,
+    nascimento: "",
     email: "1111",
   };
 
@@ -48,7 +48,7 @@ export class SearchingFieldComponent {
         }
       }
       this.people = matchingPp;
-      alert(`Para ${nome}: \n${JSON.stringify(this.people)}`);
+      // alert(`Para ${nome}: \n${JSON.stringify(this.people)}`);
     })
   }
 

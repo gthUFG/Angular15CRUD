@@ -7,9 +7,10 @@
             <td> {{ p.id }} </td>
             <td> {{ p.nome }} </td>
             <td> {{ ponctuateCPF(p.cpf) }} </td>
-            <td> {{ p.idade }} </td>
+            <td> {{ p.nascimento }} </td>
             <td> {{ p.email }} </td>
-            <delete-button [index]="i" (click)="delPerson(p.id)"/>
+            <delete-button [index]="i" (click)="delPerson(parseN(p.id))"/>
+            <edit-button (click)="callEditPerson(parseN(p.id))"></edit-button>
             <!-- <button type="button" id="deletePerson">x</button> -->
         </tr>
     </table>

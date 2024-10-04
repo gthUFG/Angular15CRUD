@@ -3,10 +3,10 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 export interface Person {
-  id: number,
+  id: string,
   nome: string,
   cpf: string,
-  idade: number,
+  nascimento: string,
   email: string
 }
 

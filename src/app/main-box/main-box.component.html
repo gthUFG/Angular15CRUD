@@ -1,4 +1,34 @@
 <div class="mainBox">
-    <app-searching-field (create)="addPerson($event)" (search)="attSearch($event)" [peopleLength]="maxId"/>
-    <app-data-table [people]="people"/>
+    <!-- <app-searching-field (create)="addPerson($event)" (search)="attSearch($event)" [peopleLength]="maxId"/> -->
+    <div id="searchTable">
+        <div id="searchingField">
+            <form>
+                <label for="search"></label>
+                <input type="text" id="search" name="fsearch" placeholder="Digite o nome da pessoa" (input)="attSearch()" [(ngModel)]="search">
+                
+                <button type="button" id="createPerson"  (click)="mode='registering'">Criar</button>
+                
+            </form>
+        </div>
+        <app-data-table (edit)="openEditor($event)" [people]="people"/>
+    </div>
+    
+        <div id="registerPerson">
+            @if(mode=="registering"){<h1>Registre a pessoa</h1>}
+            @if(mode=="editing"){
+                <h1>Edite os dados</h1>
+                <h2>{{displayEditing()}}</h2>
+            }
+
+            <input type="text" name="fname" placeholder="Nome" [(ngModel)]="pessoaCadastrada.nome">
+            <input type="text" name="fcpf" placeholder="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" [(ngModel)]="pessoaCadastrada.cpf">
+            <input type="date" name="fbirth" placeholder="Data de Nascimento" [(ngModel)]="pessoaCadastrada.nascimento">
+            <input type="text" name="fmail" placeholder="E-mail" [(ngModel)]="pessoaCadastrada.email">
+
+            @if(mode=="registering"){<button type="submit" (click)="addPerson()">Registrar</button>}
+            @if(mode=="editing"){<button type="submit" (click)="editPerson()">Atualizar Dados</button>}
+
+        </div>
+    
+
 </div>
