@@ -1,27 +1,73 @@
 # AngularCrud
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+Esse projeto é uma PoC (Prova de Conceito) relacionada à criação de um sistema CRUD desenvolvido com o framework Angular, de forma que permita ao usuário realizar operações como create, read, update e delete em sua lista de pacientes. O sistema conta com a validação dos campos de formulário e as mensagens de operação.
+Esse projeto foi gerado com o Angular CLI (https://github.com/angular/angular-cli), versão 18.2.5.
 
-## Development server
+## Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Angular 18.2.5
+PrimeNG
+Typescript
+HTML, CSS
 
-## Code scaffolding
+## Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Node.js
+Angular CLI
+JSON-server
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone este repositório:
+```
+git clone https://github.com/ArthurAndrad3/poc_crud_pacientes
+```
 
-## Running unit tests
+Instale as dependências:
+```
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Caso ainda não tenha o JSON-server instalado:
+```
+npm install -g json-server
+```
+Inicie o servidor json-server apontando para o arquivo db.json:
+```
+json-server db.json
+```
+O servidor será executado em http://localhost:3000.
+A lista de pacientes pode ser encontrada em https://localhost:3000/person.
 
-## Running end-to-end tests
+Inicie o servidor de desenvolvimento:
+```
+ng serve
+```
+Abra o navegador e acesse http://localhost:4200.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Backlog
 
-## Further help
+Cadastro de Pacientes:
+## Uso do programa
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Função CREATE:
+  1. Clique em "+ Registrar", no campo ao lado do de pesquisa.
+  2. Preencha os campos de forma adequada.
+  3. Em caso de falha na obtenção das informações, o usuário será informado com um alerta.
+  4. Clique em "Registrar", na parte inferior direita.
+  5. A página será atualizada automaticamente com a nova lista de pacientes.
+
+Função READ:
+  1. Todos os dados dos pacientes são disponibilizados na tabela.
+  2. Para filtrar pacientes pelo nome, digite o nome ou sobrenome destes no campo de pesquisa.
+
+Função UPDATE:
+  1. Clique em editar (ícone de um lápis), no campo do paciente em questão.
+  2. Preencha os campos de forma adequada.
+  3. Em caso de falha na obtenção das informações, o usuário será informado com um alerta.
+  4. Clique em "Atualizar Dados", na parte inferior direita.
+  5. A página será atualizada automaticamente com a nova lista de pacientes.
+
+Função DELETE:
+  1. Clique em deletar (ícone de um X), no campo do paciente em questão.
+  2. A página será atualizada automaticamente com a nova lista de pacientes.
