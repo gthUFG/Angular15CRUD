@@ -20,7 +20,7 @@ Esse projeto foi gerado com o Angular CLI (https://github.com/angular/angular-cl
 
 Clone este repositório:
 ```
-git clone https://github.com/ArthurAndrad3/poc_crud_pacientes
+git clone https://github.com/gthUFG/AngularCRUD
 ```
 
 Instale as dependências:
